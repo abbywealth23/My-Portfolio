@@ -1,88 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abiodun Olamide Portfolio</title>
-  <link rel="stylesheet" href="index.css">
+
+/* Gradient background for the whole page */
+body {
+  font-family: 'Arial',  sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(1, 28, 51));/* Beautiful flower image */
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  }
+
+
+/* my profile pictures */
+.profile-pic{
+  width: 150px;
+  height: 150px;
+  border:0;
+  border-radius: 70px;
+}
+
+.link-wrapper{
+  a{
+    color: white;
+  }
+}
+
+.body-wrapper{
+  background-image: linear-gradient(to right, rgb(30, 60, 114));
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+section{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+
   
-</head>
+  h2{
+    margin: 0;
+  }
+
+  .cv-button{
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: rgb(0, 255, 149);
+    border-radius: 5px;
+    padding: 13px;
+  }
+}
+
+ul{
+  padding-left: 0;
+}
+/* list*/
+li{
+  color: rgb(29, 29, 29);
+  margin-bottom: 5px;
+  width: fit-content;
+  border-radius: 10px;
+  list-style-type: none;
+  background-color: rgb(0, 255, 149);
+  padding: 15px;
+  font-weight: bold;
+}
+
+.skills-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+
+}
+
+.interests-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; */
+  gap: 10px;
+}
+
+/* Header section */
+header {
+  
+  text-align: center;
+  padding: 30px;
+  line-height: 15px;
+  font-size: larger;
+}
+
+.projects{
+  
+  ol{
+    padding: 0;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+}
+
+.contact{
+  a{
+    color: white;
+    font-weight: bolder;
+    padding-left: 20px;
+  }
+}
 
 
-<body>
-    <header class="header">
-        <img  src="wealth.jpeg" alt="Olamide's Profile Picture" class="profile-pic" />
-        <h1>Abiodun Olamide Kehinde</h1>
-        <p> Web Developer and Cybersecurity Analyst (Ethical Hacker)</p>
-        <div class="link-wrapper">
-          <a href="https://www.linkedin.com/in/olamide-abiodun-15530236a" target="_blank">LinkedIn</a>
-          <a href="https://github.com/" target="_blank">GitHub</a>
-        </div>
-    </header>
-    
-    <div class="body-wrapper">
-      <section class="about">
-        <h2 class="ME">About Me</h2>
-        <p>
-          I am a passionate and enthusiastic upcoming web developer and aspiring cybersecurity analyst from Nigeria.
-          I enjoy building functional and user-friendly websites that solve real problems and improve digital experiences.
-          while I continue to grow my skills in front-end and back-end development, I am also deeply interested in cybersecurity-driven by a desire to protect digital 
-          systems and data from evolving threats. I enjoy learning, collaborating with others, and tackling challenges head-on.
-          As I continue on this journey, I am committed to building secure, innovative, and impactful digital solutions.
-        </p>
-      </section>
-
-      <section class="Education">
-        <h2 class="Education"> Educational Background</h2>
-        <p>I hold a degree in Computer Engineering from Yaba College of Technology.
-          I graduated with a distinction.</p>
-        <p>Below is a copy of my CV</p>
-
-        <a class="cv-button" href="/Download Olamide_Kehinde_Abiodun_CV (1).docx" download>Download My CV</a>
-      </section>
-    
-      <section class="skills">
-        <h2 class="Myskills">Skills</h2>
-        <ul class="skills-wrapper">
-          <li>Penetration testing using kali linux</li>
-          <li>Network traffic analysis using wireshark</li>
-          <li>Front-End Development: HTML5, CSS3</li>
-          <li>Operating System: Kali Linux, Windows</li>
-          <li>Database Expertise: MySQL</li>
-          <li>Tools: MS Word, MS Excel, Google docs, wireshark, Git</li>
-        </ul>
-      </section>
-    
-      <section class="interests">
-        <h2 class="Myinterest">Interests</h2>
-        <ul class="interests-wrapper">
-          <li>web surfing</li>
-          <li>Web development</li>
-          <li>Problem-Solving</li>
-          <li>Traveling & Exploring New Cultures</li>
-          <li>Reading Cybersecurity trends</li>
-          <li>Cybersecurity</li>
-        </ul>
-      </section>
-
-      <section class="projects">
-        <h2 class="project">Projects</h2>
-        <ol type="1" start="1"> 
-        <li><a href="/All Python practices/Week_One_ Python_Assignment.py">Project1:</a> My first written Python code Using Visual Studio Code</li>
-        <li><a href="/intro to html/assignment.html">Project2:</a> My first written HTML5 and CSS3 code Using Visual Studio Code</li></li>
-        </ol>
-      </section>
-
-      <section class="contact">
-        <h2 class="Mycontacts">Contact Me</h2>
-        <p>Feel free to reach out! <a href="mailto:abbywealth23@gmail.com" target="_blank">Contact Form</a></p>
-      </section>
-
-    </div>
-      
-      <footer>
-        <p>&copy; 2025 Abiodun Olamide. All rights reserved.</p>
-      </footer>
-    </body>
-    </html>
-    
+/* footer */
+footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px;
+height: 30px;
+}
